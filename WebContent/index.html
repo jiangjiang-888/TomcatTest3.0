@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script>
+
+
+        function saveStatus(){
+            /*结束时保存设备状态*/
+            window.onbeforeunload=function(){//必须使用beforeunload
+                var url ="ListItemServlet?act=loginout";
+                $.ajax({
+                    url:url,
+                    async:false                //必须采用同步方法
+                });
+            }
+        }
+        saveStatus();
+    </script>
+</head>
+<body>
+<a href="ListItemServlet">进入主页</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+input {
+    width: 250px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+
+}
+.inputForUser
+{
+    width: 250px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+body {
+    background-color: #D56F2B;
+
+}
+div{
+    width:60%;
+    height:550px;
+    border-radius:10px;
+    margin:0 auto;
+    background-color:white;
+    text-align:center;
+    line-height:50px;
+    margin-top:50px;
+    padding-top:30px;
+    color:#D56F2B;
+}
+.submit{
+    background-color:#D56F2B;
+    color:white;
+    height:30px;
+    border:none;
+    font-size:16px;
+    width:150px;
+
+}

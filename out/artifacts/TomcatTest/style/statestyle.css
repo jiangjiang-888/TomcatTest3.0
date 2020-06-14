@@ -1,0 +1,151 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+li {
+    float: left
+}
+
+li a:link, a:visited {
+    display: block;
+    width: 80px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #bebebe;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-top-left-radius: 7px;
+}
+
+li a:hover, a:active {
+    border-top-left-radius: 7px;
+    background-color: #cc0000;
+}
+
+li input {
+    border: none;
+}
+
+.inputbg {
+    background-color: #bebebe;
+    padding: 4px;
+}
+
+body {
+    background: #eff3f5;
+}
+
+/*表格样式*/
+table {
+    width: 90%;
+    background: #ccc;
+    margin-left: 5%;
+    border-collapse: collapse;
+    /*border-collapse:collapse合并内外边距(去除表格单元格默认的2个像素内外边距*/
+}
+
+th, td {
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #eee;
+    font-weight: normal;
+}
+
+tr {
+    background: #fff;
+}
+
+tr:hover {
+    background: #cc0;
+}
+
+td a {
+    color: #06f;
+    text-decoration: none;
+}
+
+td a:hover {
+    color: #06f;
+    text-decoration: underline;
+}
+
+td a:link {
+    color: #06f;
+}
+
+td a:visited {
+    color: #06f;
+}
+
+label {
+    color: #D56F2B;
+}
+
+.wrap {
+
+    width: 100%;
+}
+
+#left {
+    width: 10%;
+    margin-left: 5%;
+    float: left;
+
+}
+
+#right {
+    padding-top: 20px;
+    background: white;
+    margin-left: 15%;
+    height: 600px;
+}
+
+.div {
+    background-color: white;
+    color: #D56F2B;
+    height: 100%;
+    line-height: 50px;
+    border-top-left-radius: 15px;
+    text-align: center;
+}
+
+
+.div a:link {
+    color: #D56F2B;
+    text-decoration: none;
+}
+
+.div a:visited {
+    color: #D56F2B;
+    text-decoration: none;
+}
+
+.div a:hover {
+    color: #D56F2B;
+    text-decoration: underline;
+}
+
+.item {
+    height: 60px;
+    margin: 10px auto;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: #eff3f5;
+    border-radius: 5px;
+    color: #808080;
+    width: 90%;
+
+}

@@ -1,0 +1,82 @@
+.inputForUser {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 22px;
+    font-size: 15px;
+    width: 220px;
+    padding-left: 5px;
+    margin: 5px;
+}
+
+.fromForUser {
+    margin: 0 auto;
+    width: 420px;
+    height: 500px;
+    background-color: white;
+    border-radius:15px;
+}
+
+.clickbutton {
+    height: 35px;
+    background-color: #ee7700;
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 70%;
+    border-radius:10px;
+
+}
+
+.divForForm {
+    text-align: center;
+}
+
+label {
+    float: left;
+    width: 120px;
+    height: 32px;
+    text-align: right;
+    color: #D56F2B;
+    font-size: 15px;
+    line-height:32px;
+    /*vertical-align:middle;*/
+}
+
+h2 {
+    display: inline-block;
+    color: #D56F2B;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url(../image/bg.jpeg);
+}
+a:link {
+    color: #D56F2B;
+    text-decoration:none;
+    margin-left:15px;
+}
+a:visited {
+    color:#D56F2B;
+    text-decoration:none;
+}
+a:hover {
+    color: #D56F2B;
+    text-decoration: underline;
+}
+
+span{
+    float: right;
+    width:120px;
+    font-size:10px;
+    color:gray;
+    text-align: left;
+}
+.notice{
+    float: right;
+    width:300px;
+    font-size:10px;
+    color:gray;
+    text-align:right;
+    margin-right:15px ;
+}

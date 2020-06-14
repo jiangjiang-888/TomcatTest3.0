@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-<%@ page  import="main.RegisterFormBean"%>
+<%@ page  import="main.Bean.RegisterFormBean"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,8 +40,5 @@
 	}
 	
 	%>
-
-
-
 </body>
 </html>

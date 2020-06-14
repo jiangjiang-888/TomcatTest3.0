@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-fileupload-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/imap.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/standard-1.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-io-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/smtp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jstl-1.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-beanutils-1.9.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/lang-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

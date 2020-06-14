@@ -1,0 +1,68 @@
+body {
+    background: #eff3f5;
+}
+
+.cart {
+    height: 60px;
+    margin: 10px auto;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: white;
+    border-radius: 5px;
+    width: 60%
+}
+
+.CartItemName {
+    color: #888888;
+    font-size: 15px;
+    height: 35px;
+    width: 60%;
+    float: left;
+}
+
+.CartItemPrice {
+    color: #D56F2B;
+    text-align: center;
+    width: 10%;
+    font-size: 15px;
+    margin-top: 10px;
+    float: left;
+}
+
+.CartItemNumber {
+    color: #D56F2B;
+    text-align: center;
+    whith: 10%;
+    font-size: 15px;
+    float: left;
+    margin-top: 10px;
+}
+.CartItemPrice a{
+    font-size:12px;
+
+
+}
+laber {
+    line-height: 20px;
+    text-align: center;
+}
+.laber2
+{
+    color: #D56F2B;
+    font-size: 13px;
+
+}
+
+.hover a:link {
+    color: white;
+    text-decoration:none;
+    margin-left:15px;
+}
+.hover a:visited {
+    color:white;
+    text-decoration:none;
+}
+.hover a:hover {
+    color: white;
+    text-decoration: underline;
+}

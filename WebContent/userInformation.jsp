@@ -1,10 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
-<%@ page import="main.ListItemServlet"%>
-<%@ page import="main.UserBean"%>
+<%@ page import="main.Servlet.ListItemServlet"%>
+<%@ page import="main.Bean.UserBean"%>
 <%@ page import="java.sql.*"%>
-<%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="java.io.*,java.util.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*"%>
+<%@ page import="main.Utils.UserBrowseUtils" %>
+<%@ page import="java.text.ParseException" %>
+<%@ page import="main.Utils.ActionUtils" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 
@@ -13,109 +16,37 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>用户个人信息</title>
+<link href="style/informationstyle.css" rel="stylesheet" type="text/css">
+	<link href="style/publicstyle.css" rel="stylesheet" type="text/css">
 
-<style type="text/css">
-
-body
-{
-background-color:#F2F2F2;
-
-}
-.wrap {
-	margin: 0 auto;
-	width: 100%;
-}
-
-#left {
-	width: 10%;
-	float: left;
-	margin-left: 15%;
-	background-color: white;
-	height: 550px;
-}
-
-#right {
-	
-	background: #D56F2B;
-	margin-left: 25%;
-	margin-right: 15%;
-	background-color:white;
-	height: 550px;
-}
-
-label {
-	width: 110px;
-	height: 32px;
-	text-align: right;
-	color: #D56F2B;
-	font-size: 18px;
-	margin-left: 120px;
-}
-
-span {
-	
-	width: 120px;
-	font-size: 18px;
-	color: gray;
-	text-align: left;
-}
-
-input {
-	border: 1px solid #D56F2B;
-	border-radius: 5px;
-	height: 25px;
-	font-size: 18px;
-	width: 220px;
-	padding-left: 5px;
-	margin: 5px;
-	text-color:#D56F2B;
-}
-
-.clickbutton {
-	height: 30px;
-	background-color: #D56F2B;
-	border: none;
-	color: white;
-	font-size: 18px;
-	width:150px;
-	margin-left:120px;
-	
-}
-a:link {
-	color: white;
-	text-decoration:none;
-	margin-left:15px;
-}
-a:visited {
-	color:white;
-	text-decoration:none;
-}
-a:hover {
-	color: white;
-	text-decoration: underline;
-}
-</style>
 </head>
 <body>
-<div style="background-color: #D56F2B;height:45px; line-height:35px; color:white; text-align:right;padding-right:300px; margin-bottom:20px;"> 
+<div class="top">
 			<%
 				UserBean user = (UserBean) request.getSession().getAttribute("userBean");
 				if (user == null)
-					request.getRequestDispatcher("loginIn.jsp").forward(request, response);
+					request.getRequestDispatcher("LoginIn.jsp").forward(request, response);
 				else
 				{
-					out.print("  <a href=ListItemServlet?act=loginout>   注销 </a>");
-					out.print("  <a href='ListItemServlet'>   购物主页 </a>");
+					out.print("  <a href=ListItemServlet?act=loginout&type=user>   注销 </a>");
+					out.print("  <a href='ListItemServlet?itemName=recommendclass'>   购物主页 </a>");
 					out.print("  <a href='CartBeanListServlet?act=cart'>   我的购物车</a>");
 					out.print("  <a href=CartBeanListServlet?act=orderForm>   我的订单 </a>");
+					try {
+						UserBrowseUtils.getURLandTime(request,null,user.getUserName());
+						ActionUtils.WriteDownActions("user",user.getUserName(),user.getIp(),"查看个人信息");
+
+					} catch (ParseException e) {
+						e.printStackTrace();
+					}
 				}
 			%>
 </div>
 	<div class="wrap">
-		<aside id="left">
-		<img src="image/userimage.jpg" style="width:70%;margin-left:30%; margin-top:50px;"/>
+		<aside class="left">
+		<img src="image/userimage.jpg" class="user-image"/>
 		</aside>
-		<section id="right">
+		<section class="right">
 
 
 			<div style="height:50px;"></div>
